@@ -6,9 +6,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
     .content {
-        background-color: #dedede;
+        background-color: #ffffff;
         border: 1px solid #000;
         position: relative;
         width: 25rem;
@@ -23,6 +23,7 @@
             border: 1px solid #000;
             background-color: #000;
             color: #fff;
+            cursor: pointer;
         }
 
         .message {

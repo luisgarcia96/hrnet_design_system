@@ -12,7 +12,6 @@ export default {
 export const ModalExample = {
 	args: {
 		message: "Example of the modal content",
-		open: true,
-        onClose: () => {},
+        onClose: () => {console.log("Modal closed")},
 	},
 };
