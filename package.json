@@ -1,9 +1,10 @@
 {
-	"name": "hrnet_design_system",
+	"name": "@luisgarcia96/hrnet_design_system",
 	"private": true,
 	"version": "0.0.0",
 	"description": "A design system for HRNet",
-  "main": "index.js",
+  	"main": "dist/index.js",
+	"module": "dist/index.es.js",
 	"type": "module",
 	"scripts": {
 		"dev": "vite",
