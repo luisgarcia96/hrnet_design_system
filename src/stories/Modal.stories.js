@@ -1,4 +1,4 @@
-import Modal from "../components/Modal/Modal";
+import {Modal} from "../components/Modal/Modal";
 
 export default {
 	title: "Example/Modal",
