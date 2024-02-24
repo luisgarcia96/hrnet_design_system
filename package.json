@@ -1,15 +1,20 @@
 {
 	"name": "@luisgarcia96/hrnet_design_system",
-	"private": true,
-	"version": "0.0.0",
+	"private": false,
+	"license": "MIT",
+	"publishConfig": {
+		"access": "public"
+	},
+	"version": "0.0.2",
 	"description": "A design system for HRNet",
-	"main": "./dist/Modal.umd.js",
-	"module": "./dist/Modal.es.js",
+	"main": "./dist/hrnet_design_system.umd.js",
+	"module": "./dist/hrnet_design_system.es.js",
 	"exports": {
 		".": {
-			"import": "./dist/Modal.es.js",
-			"require": "./dist/Modal.umd.js"
-		}
+			"import": "./dist/hrnet_design_system.es.js",
+			"require": "./dist/hrnet_design_system.umd.js"
+		},
+		"./dist/style.css": "./dist/style.css"
 	},
 	"type": "module",
 	"scripts": {
