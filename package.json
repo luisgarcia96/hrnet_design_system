@@ -3,8 +3,14 @@
 	"private": true,
 	"version": "0.0.0",
 	"description": "A design system for HRNet",
-  	"main": "dist/index.js",
-	"module": "dist/index.es.js",
+	"main": "./dist/Modal.umd.js",
+	"module": "./dist/Modal.es.js",
+	"exports": {
+		".": {
+			"import": "./dist/Modal.es.js",
+			"require": "./dist/Modal.umd.js"
+		}
+	},
 	"type": "module",
 	"scripts": {
 		"dev": "vite",
