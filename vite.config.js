@@ -6,18 +6,21 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
 	build: {
 		lib: {
-			entry: path.resolve("src", "index.js"),
-			name: "hrnet_design_system",
-			fileName: (format) => `hrnet_design_system.${format}.js`,
+			entry: path.resolve("src", "components/Modal/index.jsx"),
+			name: "index",
+			fileName: (format) => `index.${format}.js`,
 		},
 		rollupOptions: {
 			external: ["react", "react-dom"],
 			output: {
 				globals: {
 					react: "React",
+					"react-dom": "ReactDOM",
 				},
 			},
 		},
+		sourcemap: true,
+		emptyOutDir: true,
 	},
 	plugins: [react()],
 });

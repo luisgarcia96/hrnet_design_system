@@ -12,7 +12,7 @@ import styles from "./Modal.module.scss";
  * @param {Function} props.onClose - The function to be called when the modal is closed.
  * @returns {JSX.Element} The rendered Modal component.
  */
-export const Modal = ({ message, isOpen, onClose }) => (
+const Modal = ({ message, isOpen, onClose }) => (
 	<div className={styles.modal} style={{ display: isOpen ? "block" : "none" }}>
 		<div className={styles.content}>
 			<button className={styles.close} onClick={onClose}>
@@ -22,6 +22,8 @@ export const Modal = ({ message, isOpen, onClose }) => (
 		</div>
 	</div>
 );
+
+export default Modal;
 
 Modal.propTypes = {
 	message: PropTypes.node.isRequired,

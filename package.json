@@ -5,16 +5,18 @@
 	"publishConfig": {
 		"access": "public"
 	},
-	"version": "0.0.2",
+	"version": "0.0.8",
 	"description": "A design system for HRNet",
-	"main": "./dist/hrnet_design_system.umd.js",
-	"module": "./dist/hrnet_design_system.es.js",
+	"main": "dist/index.umd.js",
+	"module": "dist/index.es.js",
+	"files": [
+		"dist"
+	],
 	"exports": {
 		".": {
-			"import": "./dist/hrnet_design_system.es.js",
-			"require": "./dist/hrnet_design_system.umd.js"
-		},
-		"./dist/style.css": "./dist/style.css"
+			"import": "./dist/index.es.js",
+			"require": "./dist/index.umd.js"
+		}
 	},
 	"type": "module",
 	"scripts": {
