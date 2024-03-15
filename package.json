@@ -5,7 +5,7 @@
 	"publishConfig": {
 		"access": "public"
 	},
-	"version": "0.0.8",
+	"version": "0.0.10",
 	"description": "A design system for HRNet",
 	"main": "dist/index.umd.js",
 	"module": "dist/index.es.js",
@@ -16,7 +16,8 @@
 		".": {
 			"import": "./dist/index.es.js",
 			"require": "./dist/index.umd.js"
-		}
+		},
+		"./dist/style.css": "./dist/style.css"
 	},
 	"type": "module",
 	"scripts": {
